@@ -29,10 +29,9 @@ A message can include any information. It could, for example, contain informatio
 about a process or job that should start on another application, possibly even on another 
 server, or it might be a simple text message.
 
-EXCHANGES
+-EXCHANGES
+
 Messages are not published directly to a queue; instead, the producer sends a message 
-to an exchange. The job of an exchange is to accept messages from the producer appli
--
-cations  and  route  them  to  the  correct  message  queues.  It  does  this  with  the  help  of  
+to an exchange. The job of an exchange is to accept messages from the producer appli-cations  and  route  them  to  the  correct  message  queues.  It  does  this  with  the  help  of  
 bindings  and  routing  keys.  A  binding  is  a  link  between  a  queue  and  an  exchange.  
 
