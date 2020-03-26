@@ -33,5 +33,17 @@ server, or it might be a simple text message.
 
 Messages are not published directly to a queue; instead, the producer sends a message 
 to an exchange. The job of an exchange is to accept messages from the producer appli-cations  and  route  them  to  the  correct  message  queues.  It  does  this  with  the  help  of  
-bindings  and  routing  keys.  A  binding  is  a  link  between  a  queue  and  an  exchange.  
+bindings  and  routing  keys.  A  binding  is  a  link  between  a  queue  and  an  exchange.
+essages are not published directly to a queue. 
+Instead, the producer sends messages to an exchange. Exchanges are message routing 
+agents,  living  in  a  virtual  host  (vhost)  within  RabbitMQ.  Exchanges  accept  messages  
+from  the  producer  application  and  route  them  to  message  queues  with  the  help  of  
+header attributes, bindings, and routing keys. 
+
+A  binding  is  a  “link”  configured  to  make  a  connection  between  a  queue  and  an 
+exchange.  The  routing  key  is  a  message  attribute.  The  exchange  might  look  at  the  
+routing key, depending on exchange type, when deciding on how to route the message 
+to the correct queue.
+
+
 
